@@ -11,7 +11,7 @@ open_url = urlopen('http://ws.bus.go.kr/api/rest/buspos/getBusPosByRtid?serviceK
 
 num = 1
 
-
+#test
 
 soup = BeautifulSoup(open_url, 'lxml')
 for anchor in soup.select('gpsY, gpsX, plainNo, dataTm'):
